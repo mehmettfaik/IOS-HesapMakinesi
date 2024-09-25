@@ -34,7 +34,7 @@ class ViewController: UIViewController {
             
             operation = sender.tag
             performingMath = true
-        } else if sender.tag == 17 { // Eşittir
+        } else if sender.tag == 17 { // Eşittir tuşuna basılırsa
             if operation == 13 {
                 labelResult.text = String(labelResultFirstNum / labelResultSecondNum)
             } else if operation == 14 {
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
             } else if operation == 16 {
                 labelResult.text = String(labelResultFirstNum + labelResultSecondNum)
             }
-        } else if sender.tag == 10 { // C tuşu (sıfırla)
+        } else if sender.tag == 10 { // AC sıfırlama tuşu
             labelResult.text = "0"
             labelResultFirstNum = 0
             labelResultSecondNum = 0
